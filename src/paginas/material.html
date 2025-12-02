@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="material.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Materiais</title>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <img src="logo.png" alt="Logo" id="logo">
+        <div class="menu">
+            <a class="menu-item" href="planoAula.html">Planos de aula</a>
+            <a class="menu-item" href="material.html">Materiais</a>
+            <a class="menu-item" href="contato.html">Contato</a>
+            <a class="menu-item" href="login.html">Login</a>
+            <a class="menu-item" href="adicionarMatricula">Adicionar material</a>
+        </div>
+    </div>
+    <main>
+        <h1 class="titulo-material">Materiais</h1>
+        <div class="card">
+
+            <div class="filtros">
+                <select>
+                    <option disabled selected>Disciplina</option>
+                    <option>Português</option>
+                    <option>Matemática</option>
+                    <option>Ciências</option>
+                    <option>Geografia</option>
+                    <option>História</option>
+                </select>
+            </div>
+
+            <div class="caixa-lampada">
+                <img src="lampada.png" class="lampada-img" alt="Lampada">
+                <p>Escolha um filtro</p>
+            </div>
+            <div class="material-card">
+                <h2 class="material-titulo">Análise Combinatória</h2>
+                <div class="material-imagem">
+                    <img src="material1.png" class="material-img" alt="Material1">
+                </div>
+                <div class="material-info-linha">
+                    <p class="material-info"><strong>Matemática</strong></p>
+                    <p class="material-info"><strong>Ensino Fundamental II</strong></p>
+                </div>
+                <p class="material-resumo">
+                    <strong>Mapa mental colorido com imagens e exemplos simplificados de análise
+                        combinatória.</strong>
+                </p>
+                <a href="https://www.canva.com/design/DAGUgRynOMU/NJVRwVqkMRN0WMEU8miHvw/edit?utm_content=DAGUgRynOMU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                    class="material-link" target="_blank">Acessar material</a>
+
+                <p class="material-hashtags">#permutacao #combinacao #arranjo</p>
+            </div>
+
+            <div class="material-card">
+                <h2 class="material-titulo">A Pós-verdade</h2>
+                <div class="material-imagem">
+                    <img src="material2.png" class="material-img" alt="Material2">
+                </div>
+                <div class="material-info-linha">
+                    <p class="material-info"><strong>História</strong></p>
+                    <p class="material-info"><strong>Ensino Médio</strong></p>
+                </div>
+                <p class="material-resumo">
+                    <strong>Slide com imagens e vídeos ilustrativos da atualidade, além de resumos dos principais
+                        tópicos do tema.</strong>
+                </p>
+                <a href="https://www.canva.com/design/DAGntERJlQg/Ja4RzFVfjjx2P5npnNkzLA/edit" class="material-link"
+                    target="_blank">Acessar material</a>
+                <p class="material-hashtags">#bauman #modernidade #tecnologia</p>
+            </div>
+
+            <div class="material-card">
+                <h2 class="material-titulo">Administração Municipal</h2>
+                <div class="material-imagem">
+                    <img src="material3.jpg" class="material-img" alt="Material3">
+                </div>
+                <div class="material-info-linha">
+                    <p class="material-info"><strong>História</strong></p>
+                    <p class="material-info"><strong>Ensino Médio</strong></p>
+                </div>
+                <p class="material-resumo">
+                    <strong>Organograma com esquema organizado e resumido da administração da cidade de Arapiraca, com
+                        cores e observações interessantes.</strong>
+                </p>
+                <a href="https://www.canva.com/design/DAGjal_grIo/XaorTooPSHsB125a52Tu3g/edit?utm_content=DAGjal_grIo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                    class="material-link" target="_blank">Acessar material</a>
+                <p class="material-hashtags">#arapiraca #poderes #impostos</p>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const botao = document.querySelector(".filtros select");
+                const lampada = document.querySelector(".caixa-lampada");
+                const materiais = document.querySelectorAll(".material-card");
+                materiais.forEach(material => material.style.display = "none");
+                botao.addEventListener("change", () => {
+                    const filtro = botao.value;
+                    if (filtro === "Disciplina") {
+                        lampada.style.display = "block";
+                        materiais.forEach(material => material.style.display = "none");
+                        return;
+                    }
+                    lampada.style.display = "none";
+                    materiais.forEach(material => {
+                        const materiaCard = material.querySelector(".material-info strong").textContent.trim();
+                        if (materiaCard === filtro) {
+                            material.style.display = "block";
+                        } else {
+                            material.style.display = "none";
+                        }
+                    });
+                });
+            });
+        </script>
+
+</body>
+
+</html>
