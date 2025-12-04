@@ -178,3 +178,13 @@ select {
     background-color: #4a698d;
     color: #ffffff;
 }
+
+/*RODAPÉ*/
+footer {
+    background-color: #fce6e8;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #d86f7b;
+    border-top: 2px solid #f1b7be;
+}
