@@ -51,7 +51,7 @@ main {
     text-align: center;
 }
 
-.titulo-material {
+.titulo-planoAula {
     font-size: 28px;
     color: #d5888c;
     margin-bottom: 25px;
@@ -86,28 +86,30 @@ select {
 }
 
 /*CARD DA LÂMPADA*/
-.caixa-lampada {
+.caixa-plano {
     background-color: #eef7f1;
     padding: 40px;
     border-radius: 6px;
     border: 1px solid #bdcce2;
+    text-align: center;
 }
 
-.lampada-img {
+.plano-img {
     height: 150px;
     width: 240px;
     margin-bottom: 10px;
     opacity: 0.9;
+    text-align: center;
 }
 
-.caixa-lampada p {
+.caixa-plano p {
     font-weight: 600;
     color: #ebadaf;
 }
 
 /*CARD DE MATERIAL*/
 
-.material-card {
+.planoAula-card {
     background-color: #ffffff;
     border: 2px solid #4a698d;
     border-radius: 8px;
@@ -118,7 +120,7 @@ select {
     color: #4a698d;
 }
 
-.material-titulo {
+.planoAula-titulo {
     font-size: 20px;
     font-weight: 600;
     color: #d5888c;
@@ -126,13 +128,13 @@ select {
     text-align: center;
 }
 
-.material-info-linha {
+.planoAula-info-linha {
     display: flex;
     justify-content: space-between;
     margin: 10px 0;
 }
 
-.material-img {
+.planoAula-img {
     max-width: 100%;
     height: auto;
     border-radius: 6px;
@@ -140,13 +142,13 @@ select {
     margin: 0 auto;
 }
 
-.material-info {
+.planoAula-info {
     font-size: 14px;
     color: #4a698d;
     margin: 0;
 }
 
-.material-resumo {
+.planoAula-resumo {
     margin: 12px 0;
     color: #94a2b8;
     font-size: 14px;
@@ -154,14 +156,14 @@ select {
     text-align: justify;
 }
 
-.material-hashtags {
+.planoAula-hashtags {
     margin-top: 10px;
     color: #d5888c;
     font-size: 14px;
     font-weight: 600;
 }
 
-.material-link {
+.planoAula-link {
     display: block;
     margin: 12px 0;
     color: #4a698d;
@@ -174,7 +176,7 @@ select {
     transition: 0.2s;
 }
 
-.material-link:hover {
+.planoAula-link:hover {
     background-color: #4a698d;
     color: #ffffff;
 }

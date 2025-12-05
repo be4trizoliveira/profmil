@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff6f6;
+    color: #333;
+}
+
+.sidebar {
+    width: 100%;
+    height: 130px;
+    background-color: #fff8fa;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0px 0px 10px #ebadaf;
+}
+
+#logo {
+    height: 160px;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    margin-left: 200px;
+}
+
+.menu-item {
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #4a698d;
+    font-weight: 600;
+}
+
+.menu-item:hover {
+    background-color: #94a2b8;
+    color: white;
+}
+
+.intro {
+    text-align: center;
+    padding: 50px 20px 30px;
+}
+
+.intro h2 {
+    color: #e49ca5;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #555;
+    font-size: 1.1rem;
+}
+
+.professores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 12px rgba(228, 156, 165, 0.3);
+    padding: 25px;
+    width: 260px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #e49ca5;
+}
+
+.card h3 {
+    color: #e49ca5;
+    margin: 12px 0 6px;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.descricao {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* RODAPÉ */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fce6e8;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #d86f7b;
+    border-top: 2px solid #f1b7be;
+}
+
+main {
+    margin-bottom: 80px;
+}
