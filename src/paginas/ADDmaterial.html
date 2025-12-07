@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ADDmaterial.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Adicionar Material</title>
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <img src="logo.png" alt="Logo" id="logo">
+
+        <div class="menu">
+            <a class="menu-item" href="paginaInicial.html">Início</a>
+            <a class="menu-item" href="perfil-professores.html">Professores</a>
+            <a class="menu-item" href="planoAula.html">Planos de aula</a>
+            <a class="menu-item" href="material.html">Materiais</a>
+            <a class="menu-item" href="contato.html">Contato</a>
+            <a class="menu-item" href="login.html">Login</a>
+            <a class="menu-item" href="adicionarMaterial.html">Adicionar material</a>
+        </div>
+    </div>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+        <!-- FORMULÁRIO -->
+        <div class="container">
+
+            <h2>Adicionar novo material</h2>
+
+            <!-- LINK DO MATERIAL -->
+            <div class="field">
+                <label>Link do material</label>
+                <input type="url" placeholder="https://exemplo.com/material.pdf">
+            </div>
+
+            <form class="form">
+
+                <div class="row">
+                    <div class="field">
+                        <label>Assunto</label>
+                        <input type="text" placeholder="Ex: Revolução Francesa">
+                    </div>
+
+                    <div class="field">
+                        <label>Disciplina</label>
+                        <input type="text" placeholder="Ex: História">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="field">
+                        <label>Descrição</label>
+                        <input type="text" placeholder="Ex: Aula para alunos do 9º ano...">
+                    </div>
+
+                    <div class="field">
+                        <label>Nível da aula</label>
+                        <select>
+                            <option>Ensino Médio</option>
+                            <option>Ensino Fundamental</option>
+                            <option>Ensino Técnico</option>
+                        </select>
+                    </div>
+                </div>
+
+                <label class="tag-label">Tags e palavras-chave</label>
+                <div class="tags">
+                    <span class="tag">#História</span>
+                    <span class="tag">#Revolução</span>
+                </div>
+
+                <p class="termos">Concordo com os Termos de Uso e Compartilhamento</p>
+
+                <div class="buttons">
+                    <button type="submit" class="enviar">Enviar</button>
+                    <button type="button" class="cancelar">Cancelar</button>
+                </div>
+
+            </form>
+        </div>
+    </main>
+
+</body>
+
+</html>
