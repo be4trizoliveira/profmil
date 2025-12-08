@@ -110,7 +110,8 @@ label {
     margin-bottom: 5px;
 }
 
-input, select {
+input,
+select {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 6px;
@@ -168,4 +169,26 @@ input, select {
     border-radius: 8px;
     color: white;
     cursor: pointer;
+}
+
+.form .field {
+    margin-bottom: 20px;
+}
+
+/*RODAPÉ*/
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fce6e8;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #d86f7b;
+    border-top: 2px solid #f1b7be;
+}
+
+main {
+    margin-bottom: 80px;
 }
