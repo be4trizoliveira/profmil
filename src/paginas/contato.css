@@ -1,11 +1,20 @@
+/* CONFIGURAÇÃO GERAL */
+html,
 body {
+    height: 100%;
     margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
     font-family: 'Poppins', sans-serif;
     background-color: #fff8fa;
     color: #94a2b8;
 }
 
-/*menu*/
+/* MENU SUPERIOR */
 .sidebar {
     width: 100%;
     height: 130px;
@@ -17,12 +26,6 @@ body {
     box-shadow: 0px 0px 10px #ebadaf;
 }
 
-.menu {
-    display: flex;
-    gap: 20px;
-    margin-left: 200px;
-}
-
 #logo {
     height: 160px;
 }
@@ -30,6 +33,7 @@ body {
 .menu {
     display: flex;
     gap: 20px;
+    margin-left: 200px;
 }
 
 .menu-item {
@@ -45,19 +49,6 @@ body {
     color: white;
 }
 
-/*PARTE SUPERIOR*/
-main {
-    padding: 20px;
-    text-align: center;
-}
-
-.titulo-material {
-    font-size: 28px;
-    color: #d5888c;
-    margin-bottom: 25px;
-}
-
-/*resto*/
 .contato-container {
     padding: 30px;
     text-align: center;
@@ -81,7 +72,7 @@ main {
 }
 
 .formulario h2 {
-    color: #4a698d;
+    color: #d86f7b;
     font-size: 28px;
     margin-bottom: 10px;
 }
@@ -92,7 +83,7 @@ main {
 }
 
 .formulario form {
-    background-color: #e0dddd;
+    background-color: #f8f6f6;
     padding: 20px;
     border-radius: 10px;
     display: flex;
@@ -108,15 +99,15 @@ main {
 }
 
 .formulario button {
-    background-color: #4a698d;
-    color: #d6d8da;
+    background-color: #d86f7b;
+    color: rgb(245, 248, 245);
     padding: 12px;
     border: none;
     border-radius: 20px;
 }
 
 .formulario button:hover {
-    background-color: #d5888c;
+    background-color: #607389;
 }
 
 .informacoes-contato {
@@ -136,14 +127,14 @@ main {
 }
 
 .icone {
-    background-color: #4a698d;
+    background-color: #ebadaf;
     border-radius: 90%;
     width: 50px;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(246, 239, 239);
+    color: rgb(255, 255, 255);
     font-size: 20px;
 }
 
@@ -159,57 +150,25 @@ main {
     object-fit: cover;
 }
 
-/*RODAPÉ*/
-
-.footer {
-    background-color: #d5888c;
+/* RODAPÉ */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fce6e8;
+    text-align: center;
+    padding: 30px;
+    font-size: 0.9rem;
+    color: #d86f7b;
+    border-top: 2px solid #f1b7be;
 }
 
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: auto;
+main {
+    margin-bottom: 80px;
 }
 
-.footer-column {
-    flex: 1;
-    min-width: 200px;
-    margin: 20px;
-}
-
-.footer-column h4 {
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-.footer-column p {
-    font-size: 14px;
-    color: rgb(255, 249, 249);
-}
-
-.footer-bottom {
-    border-top: 1px solid #fcfafa;
-    padding-top: 20px;
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: rgb(156, 84, 251);
-}
-
-.logo {
-    width: 100px;
-    height: 110px;
-}
-
-.social-icons a {
-    margin-left: 10px;
-    color: white;
-    font-size: 20px;
-}
-
-.social-icons a:hover {
-    color: #ffffff;
+.contato-container {
+    flex: 1 0 auto;
+    padding-bottom: 80px;
 }

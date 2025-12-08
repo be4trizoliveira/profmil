@@ -8,11 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <title>Página Inicial</title>
     <link rel="stylesheet" href="paginaInicial.css">
+    <title>TeachConecta - Início</title>
+
 </head>
 
 <body>
+
     <div class="sidebar">
         <img src="logo.png" alt="Logo" id="logo">
         <div class="menu">
@@ -20,84 +22,89 @@
             <a class="menu-item" href="perfil-professores.html">Professores</a>
             <a class="menu-item" href="planoAula.html">Planos de aula</a>
             <a class="menu-item" href="material.html">Materiais</a>
-            <a class="menu-item" href="contato.html">Contato</a>
             <a class="menu-item" href="login.html">Login</a>
+            <a class="menu-item" href="contato.html">Contato</a>
+            <a class="menu-item" href="contato.html">Cadastro</a>
         </div>
     </div>
 
-    <main>
-        <h1 style="text-align: center;">Jogos Internos 2025</h1>
-    </main>
+    <main class="conteudo">
+        <section class="banner">
+            <h1>Organize suas aulas de forma simples</h1>
+            <p>Encontre professores, matérias e planos de aula em um só lugar.</p>
+        </section>
 
-    </div>
+        <section class="cards-container">
+            <a href="perfil-professores.html" class="card">
+                <img src="professorAInicial.png" alt="Professor">
+                <h3>Professores</h3>
+                <p>Veja os professores cadastrados.</p>
+            </a>
 
-    <div class="cards-container2">
-        <div class="card2">
-            <h1>Jogos internos e sua importância</h1>
-            <p>Os jogos internos desempenham um papel fundamental na promoção da integração entre os estudantes,
-                incentivando o espírito esportivo e contribuindo para o desenvolvimento físico, social e emocional dos
-                participantes. No IFAL, essas competições vão além das disputas esportivas, incorporando iniciativas
-                como o
-                aluno anjo, aluno marketing, casal esportivo e outras dinâmicas que fortalecem o senso de comunidade e
-                pertencimento. Essas ações criativas tornam o evento mais inclusivo e envolvente, estimulando a prática
-                saudável de esportes e a vivência de valores como respeito, disciplina, cooperação e solidariedade. Além
-                disso, os jogos internos são uma excelente oportunidade para descobrir novos talentos e promover hábitos
-                de
-                vida mais ativos e equilibrados.</p>
-        </div>
-    </div>
+            <a href="material.html" class="card">
+                <img src="livroInicial.jpg" alt="Materiais">
+                <h3>Materiais</h3>
+                <p>Veja os materiais disponíveis.</p>
+            </a>
 
-    <div class="cards-container3">
-        <div class="card3">
-            <div class="tituloicone">
-                <h2>Período dos jogos</h2>
-                <img src="calendario.png" alt="calendario" height="50px" width="80px">
-            </div>
-            <p>Dos dias 04 a 07 de junho de 2025.</p>
-        </div>
+            <a href="planoAula.html" class="card">
+                <img src="quadroInicial.jpg" alt="Aulas">
+                <h3>Planos de Aula</h3>
+                <p>Veja os planos de aulas disponíveis.</p>
+            </a>
+        </section>
 
-        <div class="card4">
-            <div class="tituloicone">
-                <h2>Destaques do ano</h2>
-                <img src="destaque.png" alt="destaque" height="60px" width="80px">
-            </div>
-            <p>A turma que conquistar mais medalhas poderá ganhar uma viagm como premiação.</p>
-        </div>
-    </div>
-
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-column">
-                <h4>Instituição de Ensino</h4>
-                <p style="line-height: 1.5;">Instituto Federal De Alagoas - Campus Arapiraca</p>
-            </div>
-            <div class="footer-column">
-                <h4>Desenvolvedores</h4>
-                <p>Ana Karolina de Sá Pinheiro</p>
-                <p>Anny Beatriz De Oliveira</p>
-                <p>Francyele Dias dos Santos</p>
-                <p>Laila Beatriz De Souza Pereira</p>
-                <p>Lauany Bheatriz Dos Santos Delmiro</p>
-                <p>Maria Vitória Correia de Farias</p>
-            </div>
-            <div class="footer-column">
-                <h4>Ano de Criação</h4>
-                <p>2025</p>
-            </div>
-            <div class="footer-column">
-                <h4>Contato</h4>
-                <p>Redes Sociais:
-                    <a href="https://www.instagram.com/913ifal" style="color: rgb(253, 249, 249);"
-                        target="_blank">Instagram da
-                        turma</a>
+        <section class="sobre-card">
+            <div class="sobre-content">
+                <h2>O que é o TeachConecta?</h2>
+                <p>
+                    O TeachConecta foi criado para tornar a vida do professor mais prática.
+                    Aqui você encontra <strong>professores</strong>, <strong>materiais</strong> e
+                    <strong>planos de aula prontos</strong>, tudo em um único lugar!
                 </p>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <img src="913.png" alt="Logo" class="logo" />
-        </div>
+        </section>
+
+        <section class="feedbacks">
+            <h2>O que estão falando sobre nós</h2>
+
+            <div class="carrossel">
+                <div class="carrossel-track">
+
+                    <div class="feedback-card">
+                        <p>"O site facilitou demais meus planejamentos! Tudo organizado e rápido de achar."</p>
+                        <span>- Professora Karolina</span>
+                    </div>
+
+                    <div class="feedback-card">
+                        <p>"Excelente plataforma! Encontrei planos de aula prontos e de ótima qualidade."</p>
+                        <span>- Professor Italo</span>
+                    </div>
+
+                    <div class="feedback-card">
+                        <p>"Muito prático! Agora eu consigo estudar com materiais organizados e confiáveis."</p>
+                        <span>- Professora Laila</span>
+                    </div>
+
+                    <div class="feedback-card">
+                        <p>"Uma das melhores plataformas educacionais que já usei. Recomendo!"</p>
+                        <span>- Professora Maria</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <script>
+            const track = document.querySelector('.carrossel-track');
+            const clone = track.innerHTML;
+            track.innerHTML += clone;
+        </script>
+
+    </main>
+
+    <footer>
+        TeachConecta © 2025 — Todos os direitos reservados
     </footer>
 
 </body>
-
-</html>
