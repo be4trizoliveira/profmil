@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header.sidebar {
+    width: 100%;
+    height: 130px;
+    background-color: #fff8fa;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 30px;
+    box-shadow: 0px 0px 10px #ebadaf;
+}
+
+#logo {
+    height: 160px;
+}
+
+.menu {
+    display: flex;
+    gap: 22px;
+    margin-left: 200px;
+}
+
+.menu-item {
+    padding: 12px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #4a698d !important;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    transition: 0.25s;
+}
+
+.menu-item:hover {
+    background-color: #94a2b8;
+    color: #fff !important;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    border: 1px solid #eee;
+}
+
+.card h2 {
+    color: #d68c94;
+    margin-bottom: 5px;
+    font-weight: normal;
+    font-size: 1.8rem;
+}
+
+.card p.subtitle {
+    color: #bbb;
+    font-size: 0.8rem;
+    margin-bottom: 30px;
+}
+
+form {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 0.85rem;
+    color: #d68c94;
+    margin-bottom: 2px;
+    display: block;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    background-color: #e8e8e8;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color: #555;
+}
+
+input:focus,
+select:focus {
+    box-shadow: 0 0 0 2px #d68c94;
+}
+
+.row {
+    display: flex;
+    gap: 15px;
+}
+
+.col {
+    flex: 1;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.75rem;
+    color: #777;
+    margin-top: 10px;
+}
+
+.terms input {
+    width: auto;
+}
+
+button {
+    background-color: #e09ba5;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+    width: 50%;
+    align-self: center;
+}
+
+button:hover {
+    background-color: #d1828e;
+}
+
+/* RODAPÉ */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fce6e8;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #d86f7b;
+    border-top: 2px solid #f1b7be;
+}
+
+main {
+    margin-bottom: 80px;
+}

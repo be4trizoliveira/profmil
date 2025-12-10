@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechConecta - Cadastro</title>
+    <link rel="stylesheet" href="cadastrarUsuario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header class="sidebar">
+        <img id="logo" src="logo.png" alt="Logo TechConecta">
+
+        <nav class="menu">
+            <a class="menu-item" href="paginaInicial.html">Início</a>
+            <a class="menu-item" href="perfil-professores.html">Professores</a>
+            <a class="menu-item" href="planoAula.html">Plano de aula</a>
+            <a class="menu-item" href="material.html">Material</a>
+            <a class="menu-item" href="contato.html">Contato</a>
+            <a class="menu-item" href="cadastrarUsuario.html">Cadastro</a>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="card">
+            <h2>Cadastro</h2>
+            <p class="subtitle">Insira seus dados abaixo para se cadastrar no sistema.</p>
+
+            <form id="formCadastro">
+                <div>
+                    <label>Nome completo</label>
+                    <input type="text" id="nome" required>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label>Data de nascimento</label>
+                        <input type="date" id="nascimento" required>
+                    </div>
+                    <div class="col">
+                        <label>Disciplina de interesse</label>
+                        <select id="disciplina" required>
+                            <option value="" disabled selected>Selecione...</option>
+                            <option value="matematica">Matemática</option>
+                            <option value="portugues">Português</option>
+                            <option value="historia">História</option>
+                            <option value="ciencias">Ciências</option>
+                            <option value="outra">Outra</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label>Telefone</label>
+                    <input type="tel" id="telefone" placeholder="(XX) XXXXX-XXXX" required>
+                </div>
+
+                <div>
+                    <label>E-mail</label>
+                    <input type="email" id="email" required>
+                </div>
+
+                <div>
+                    <label>Senha</label>
+                    <input type="password" id="senha" required>
+                </div>
+
+                <div class="terms">
+                    <input type="checkbox" required id="termos">
+                    <label for="termos" style="color: #777; margin:0;">Ao preencher o formulário acima, eu concordo com
+                        os Termos de Uso e com a Política de Privacidade.</label>
+                </div>
+
+                <button type="submit">Cadastrar-se</button>
+            </form>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('formCadastro').addEventListener('submit', function (event) {
+            event.preventDefault();
+            alert("Cadastro realizado com sucesso!");
+            window.location.href = "paginaInicial.html";
+        });
+    </script>
+
+    <footer>
+        <p>TeachConecta © 2025 — Todos os direitos reservados</p>
+    </footer>
+
+</body>
+
+</html>
